@@ -510,13 +510,6 @@
 	class="home page-template page-template-template-builder page-template-template-builder-php page page-id-25 wp-embed-responsive theme-artraz woocommerce-js tinvwl-theme-style elementor-default elementor-kit-7 elementor-page elementor-page-25">
 
 	<div class="th-cursor"></div>
-	<div class="preloader">
-		<button class="th-btn style3 preloaderCls">Cancel Preloader</button>
-		<div class="preloader-inner">
-			<span class="loader"></span>
-		</div>
-	</div>
-
 	<div class="popup-search-box d-none d-lg-block"><button class="searchClose"><i class="fal fa-times"></i></button>
 		<form role="search" method="get" action=""><input value="" class="border-theme" name="s" required="" type="search"
 				placeholder="What are you looking for?"><button type="submit"><i class="fal fa-search"></i></button></form>
@@ -532,30 +525,18 @@
 				<ul id="menu-main-menu" class="">
 					<li id="menu-item-46"
 						class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item menu-item-home current-menu-ancestor menu-item-has-children menu-item-46">
-						<a href="">Inicio</a>
+						<a href="#">Inicio</a>
 					</li>
 					<li id="menu-item-47" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-47"><a
-							href="">Quem Somos</a></li>
+							href="#sobre">Quem Somos</a></li>
 					<li id="menu-item-65"
 						class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-65"><a
-							href="#">Serviços</a>
-						<ul class="sub-menu">
-							<li id="menu-item-61" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-61"><a
-									href="">Services</a></li>
-							<li id="menu-item-60" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-60"><a
-									href="">Detalhes de Serviços</a></li>
-						</ul>
+							href="#servicos">Serviços</a>
 					</li>
 
 					<li id="menu-item-66"
 						class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-66"><a
-							href="#">Projetos</a>
-						<ul class="sub-menu">
-							<li id="menu-item-58" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-58"><a
-									href="">Projetos</a></li>
-							<li id="menu-item-59" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-59"><a
-									href="">Detalhes de Projetos</a></li>
-						</ul>
+							href="#projetos">Projetos</a>
 					</li>
 					<li id="menu-item-51" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-51"><a
 							href="">Contato</a></li>
@@ -607,76 +588,21 @@
 									<ul id="menu-main-menu-1" class="">
 										<li
 											class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item menu-item-home current-menu-ancestor menu-item-has-children menu-item-46">
-											<a href="">Início</a>
-											<ul class="sub-menu">
-												<li
-													class="menu-item menu-item-type-custom menu-item-object-custom current-menu-ancestor current-menu-parent menu-item-has-children menu-item-1476">
-													<a href="#">Multipage</a>
-													<ul class="sub-menu">
-														<li
-															class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-25 current_page_item menu-item-1442">
-															<a href="" aria-current="page">Home One</a>
-														</li>
-														<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1445"><a
-																href="">Home Two</a></li>
-														<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1444"><a
-																href="">Home Three</a></li>
-														<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1443"><a
-																href="">Home Four</a></li>
-														<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2153"><a
-																href="">Home Five</a></li>
-														<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2152"><a
-																href="">Home Six</a></li>
-														<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2151"><a
-																href="">Home Seven</a></li>
-													</ul>
-												</li>
-												<li
-													class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1477">
-													<a href="#">Onepage</a>
-													<ul class="sub-menu">
-														<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1475"><a
-																href="">Onepage One</a></li>
-														<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1474"><a
-																href="">Onepage Two</a></li>
-														<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1473"><a
-																href="">Onepage Three</a></li>
-														<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1472"><a
-																href="">Onepage Four</a></li>
-														<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2230"><a
-																href="">Onepage Five</a></li>
-														<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2229"><a
-																href="">Onepage Six</a></li>
-														<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2228"><a
-																href="">Onepage Seven</a></li>
-													</ul>
-												</li>
-											</ul>
+											<a href="#">Início</a>
 										</li>
-										<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-47"><a href="">Quem
+										<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-47"><a
+												href="#sobre">Quem
 												Somos</a></li>
 										<li
 											class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-65">
-											<a href="#">Serviços</a>
-											<ul class="sub-menu">
-												<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-61"><a
-														href="">Serviços</a></li>
-												<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-60"><a
-														href="">Service Details</a></li>
-											</ul>
+											<a href="#servicos">Serviços</a>
 										</li>
 										<li
 											class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-66">
-											<a href="#">Projetos</a>
-											<ul class="sub-menu">
-												<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-58"><a
-														href="">Project</a></li>
-												<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-59"><a
-														href="">Project Details</a></li>
-											</ul>
+											<a href="#projetos">Projetos</a>
 										</li>
 										<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-51"><a
-												href="">Contato</a></li>
+												href="#">Contato</a></li>
 									</ul>
 								</nav>
 
@@ -701,9 +627,7 @@
 							<div class="th-hero-wrapper container th-container2">
 								<div class="hero-slider-3 th-carousel" data-fade="true" data-slide-show="1">
 									<div class="th-hero-slide">
-										<div class="th-hero-bg"
-											data-bg-src="images/security-camera-outdoors-surveillance-360-degree-2023-11-27-05-17-59-utc.jpg"
-											data-overlay="black" data-opacity="6"></div>
+										<div class="th-hero-bg" data-bg-src="images/bg_1.png" data-overlay="black" data-opacity="6"></div>
 										<div class="container">
 											<div class="hero-style3">
 												<span class="h5 hero-subtitle" data-ani="slideinup" data-ani-delay="0.1s">
@@ -724,16 +648,14 @@
 										</div>
 									</div>
 									<div class="th-hero-slide">
-										<div class="th-hero-bg"
-											data-bg-src="https://themeholy.com/wordpress/artraz/wp-content/uploads/2023/09/hero_bg_3_2.jpg"
-											data-overlay="black" data-opacity="6"></div>
+										<div class="th-hero-bg" data-bg-src="images/bg_1.png" data-overlay="black" data-opacity="6"></div>
 										<div class="container">
 											<div class="hero-style3">
 												<span class="h5 hero-subtitle" data-ani="slideinup" data-ani-delay="0.1s">Lorem &amp;
 													Ipsum</span>
 												<h1 class="hero-title e-title" data-ani="slideinup" data-ani-delay="0.3s">Lorem Ipsum</h1>
-												<h1 class="hero-title e-title-2" data-ani="slideinup" data-ani-delay="0.5s">Dolor sit amet <span
-														class="text-transparent">lorem</span> Ipsum</h1>
+												<h1 class="hero-title e-title-2" data-ani="slideinup" data-ani-delay="0.5s">Dolor sit amet
+												</h1>
 
 												<!--<div class="hero-meta" data-ani="slideinup" data-ani-delay="0.7s">
 							                            	<span class="meta-info"><i class="far fa-location-dot"></i>NEW YORK, <span class="text-theme">USA</span></span>
@@ -751,8 +673,7 @@
 												<span class="h5 hero-subtitle" data-ani="slideinup" data-ani-delay="0.1s">Lorem &amp;
 													Ipsum</span>
 												<h1 class="hero-title e-title" data-ani="slideinup" data-ani-delay="0.3s">Lorem Ipsum</h1>
-												<h1 class="hero-title e-title-2" data-ani="slideinup" data-ani-delay="0.5s">Dolor sit amet <span
-														class="text-transparent">lorem</span></h1>
+												<h1 class="hero-title e-title-2" data-ani="slideinup" data-ani-delay="0.5s">Dolor sit amet</h1>
 
 												<!--<div class="hero-meta" data-ani="slideinup" data-ani-delay="0.7s">
 							                            	<span class="meta-info"><i class="far fa-location-dot"></i>NEW YORK, <span class="text-theme">USA</span></span>
@@ -796,14 +717,12 @@
 						</div>
 					</div>
 				</div>-->
-				<div class="elementor-element elementor-element-b3e4922 e-con-full e-flex e-con e-parent" data-id="b3e4922"
-					data-element_type="container" data-settings="{" content_width":"full"}"="" data-core-v316-plus="true">
+				<div id="sobre" class="elementor-element elementor-element-b3e4922 e-con-full e-flex e-con e-parent"
+					data-id="b3e4922" data-element_type="container" data-settings="{" content_width":"full"}"=""
+					data-core-v316-plus="true">
 					<div class="elementor-element elementor-element-312df34 elementor-widget elementor-widget-artrazshapeimage"
 						data-id="312df34" data-element_type="widget" data-widget_type="artrazshapeimage.default">
 						<div class="elementor-widget-container">
-							<!-- Image -->
-							<div class="shape-mockup  jump " data-top="0.1%" data-right="0.1%"><img decoding="async"
-									src="images/shape_3.png" alt="Artraz"></div><!-- End Image -->
 						</div>
 					</div>
 					<div class="elementor-element elementor-element-a6f2964 e-flex e-con-boxed e-con e-child" data-id="a6f2964"
@@ -835,10 +754,7 @@
 									data-id="d88b00d" data-element_type="widget" data-widget_type="artrazsectiontitle.default">
 									<div class="elementor-widget-container">
 										<div class="sec-title-area">
-
-											<span class="big-title mb-35 e-big-title">A.</span><span class="sub-title e-sub-title">Eraclis
-												Papachristou Architectural Office</span>
-											<h2 class="sec-title">Two decades of <span class="text-theme">architecture</span></h2>
+											<h2 class="sec-title">QUEM <span class="text-theme">SOMOS</span></h2>
 										</div>
 
 									</div>
@@ -898,105 +814,8 @@
 						</div>
 					</div>
 				</div>
-				<div class="elementor-element elementor-element-64421dd animated-slow e-flex e-con-boxed e-con e-parent"
-					data-id="64421dd" data-element_type="container" data-settings="{"
-					animation":"slideinup","content_width":"boxed"}"="" data-core-v316-plus="true">
-					<div class="e-con-inner">
-						<div class="elementor-element elementor-element-0bb8350 e-con-full e-flex e-con e-child" data-id="0bb8350"
-							data-element_type="container" data-settings="{" content_width":"full"}"="">
-							<div
-								class="elementor-element elementor-element-24e2c4b elementor-widget elementor-widget-artrazsectiontitle"
-								data-id="24e2c4b" data-element_type="widget" data-widget_type="artrazsectiontitle.default">
-								<div class="elementor-widget-container">
-									<div class="title-area sec-title-area">
-
-										<span class="big-title  e-big-title">P.</span>
-										<h2 class="sec-title">Featured
-											<span class="text-transparent">projects</span>
-										</h2>
-									</div>
-
-								</div>
-							</div>
-							<div class="elementor-element elementor-element-cf1a177 elementor-widget elementor-widget-artrazbutton"
-								data-id="cf1a177" data-element_type="widget" data-widget_type="artrazbutton.default">
-								<div class="elementor-widget-container">
-									<div class="btn-wrapper left"><a class="link-btn e-btn" href=""><span class="line left"></span>View
-											The Projects<span class="line"></span></a></div>
-								</div>
-							</div>
-						</div>
-						<div class="elementor-element elementor-element-d6d8a3e elementor-widget elementor-widget-artrazprojects"
-							data-id="d6d8a3e" data-element_type="widget" data-widget_type="artrazprojects.default">
-							<div class="elementor-widget-container">
-								<div class="row gy-30">
-									<div class="col-xxl-auto col-md-6">
-										<div class="project-box">
-											<div class="project-img">
-												<img decoding="async" src="images/project_2_1.jpg" alt="project_2_1">
-											</div>
-											<div class="project-content">
-												<div class="project-number">01</div>
-												<h3 class="h5 project-title"><a href="">CLASSIC HOTEL PROJECT</a></h3>
-												<p class="project-map"><i class="fal fa-location-dot"></i>9 Eshelby Drive, Australia</p>
-											</div>
-										</div>
-									</div>
-									<div class="col-xxl-auto col-md-6">
-										<div class="project-box">
-											<div class="project-img">
-												<img decoding="async" src="images/project_2_2.jpg" alt="project_2_2">
-											</div>
-											<div class="project-content">
-												<div class="project-number">02</div>
-												<h3 class="h5 project-title"><a href="">CLASSIC HOME PROJECT</a></h3>
-												<p class="project-map"><i class="fal fa-location-dot"></i>Melbourne VIC, Australia</p>
-											</div>
-										</div>
-									</div>
-									<div class="col-xxl-auto col-md-6">
-										<div class="project-box">
-											<div class="project-img">
-												<img decoding="async" src="images/project_2_3.jpg" alt="project_2_3">
-											</div>
-											<div class="project-content">
-												<div class="project-number">03</div>
-												<h3 class="h5 project-title"><a href="">INTERIOR DESIGN</a></h3>
-												<p class="project-map"><i class="fal fa-location-dot"></i>24 Boorie Road, Australia</p>
-											</div>
-										</div>
-									</div>
-									<div class="col-xxl-auto col-md-6">
-										<div class="project-box">
-											<div class="project-img">
-												<img decoding="async" src="images/project_2_4.jpg" alt="project_2_4">
-											</div>
-											<div class="project-content">
-												<div class="project-number">04</div>
-												<h3 class="h5 project-title"><a href="">RESTAURANT DECORATE</a></h3>
-												<p class="project-map"><i class="fal fa-location-dot"></i>93 Gilbert Street, Australia</p>
-											</div>
-										</div>
-									</div>
-									<div class="col-xxl-auto col-md-6">
-										<div class="project-box">
-											<div class="project-img">
-												<img decoding="async" src="images/project_2_5.jpg" alt="project_2_5">
-											</div>
-											<div class="project-content">
-												<div class="project-number">05</div>
-												<h3 class="h5 project-title"><a href="">SWEEMING POOL PROJECT</a></h3>
-												<p class="project-map"><i class="fal fa-location-dot"></i>65 Railway Avenue, Australia</p>
-											</div>
-										</div>
-									</div>
-								</div>
-
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="elementor-element elementor-element-73b3b85 animated-slow e-flex e-con-boxed e-con e-parent"
+				<div id="servicos"
+					class="elementor-element elementor-element-73b3b85 animated-slow e-flex e-con-boxed e-con e-parent"
 					data-id="73b3b85" data-element_type="container" data-settings="{"
 					animation":"slideinup","content_width":"boxed"}"="" data-core-v316-plus="true">
 					<div class="e-con-inner">
@@ -1006,22 +825,21 @@
 								class="elementor-element elementor-element-53eb7c9 elementor-widget elementor-widget-artrazsectiontitle"
 								data-id="53eb7c9" data-element_type="widget" data-widget_type="artrazsectiontitle.default">
 								<div class="elementor-widget-container">
-									<div class="title-area sec-title-area">
+									<div class="title-area sec-title-area" style="padding-left: 15px;">
 
-										<span class="big-title  e-big-title">S.</span>
-										<h2 class="sec-title">Provide High-quality <br>
-											Architectural <span class="text-theme">Services</span></h2>
+										<h2 class="sec-title">Fornecendo Alta <br>
+											Qualidade de <span class="text-theme">Serviços</span></h2>
 									</div>
 
 								</div>
 							</div>
-							<div class="elementor-element elementor-element-f938618 elementor-widget elementor-widget-artrazbutton"
+							<!--<div class="elementor-element elementor-element-f938618 elementor-widget elementor-widget-artrazbutton"
 								data-id="f938618" data-element_type="widget" data-widget_type="artrazbutton.default">
 								<div class="elementor-widget-container">
 									<div class="btn-wrapper left"><a class="link-btn e-btn" href=""><span class="line left"></span>View
 											all Services<span class="line"></span></a></div>
 								</div>
-							</div>
+							</div>-->
 						</div>
 						<div class="elementor-element elementor-element-34e89d3 elementor-widget elementor-widget-artrazservice"
 							data-id="34e89d3" data-element_type="widget" data-widget_type="artrazservice.default">
@@ -1100,6 +918,107 @@
 						</div>
 					</div>
 				</div>
+				<div id="projetos"
+					class="elementor-element elementor-element-64421dd animated-slow e-flex e-con-boxed e-con e-parent"
+					data-id="64421dd" data-element_type="container" data-settings="{"
+					animation":"slideinup","content_width":"boxed"}"="" data-core-v316-plus="true">
+					<div class="e-con-inner">
+						<div class="elementor-element elementor-element-0bb8350 e-con-full e-flex e-con e-child" data-id="0bb8350"
+							data-element_type="container" data-settings="{" content_width":"full"}"="">
+							<div
+								class="elementor-element elementor-element-24e2c4b elementor-widget elementor-widget-artrazsectiontitle"
+								data-id="24e2c4b" data-element_type="widget" data-widget_type="artrazsectiontitle.default"
+								style="width: 100%;">
+								<div class="elementor-widget-container" style="width: 100%;">
+									<div class="title-area sec-title-area" style="width: 100%; display: flex; justify-content: center;">
+
+										<h2 class="sec-title">
+											<span class="text-transparent">NOSSOS</span>
+											<span>PROJETOS</span>
+										</h2>
+									</div>
+
+								</div>
+							</div>
+							<div class="elementor-element elementor-element-cf1a177 elementor-widget elementor-widget-artrazbutton"
+								data-id="cf1a177" data-element_type="widget" data-widget_type="artrazbutton.default">
+								<!--<div class="elementor-widget-container">
+									<div class="btn-wrapper left"><a class="link-btn e-btn" href=""><span class="line left"></span>View
+											The Projects<span class="line"></span></a></div>
+								</div>-->
+							</div>
+						</div>
+						<div class="elementor-element elementor-element-d6d8a3e elementor-widget elementor-widget-artrazprojects"
+							data-id="d6d8a3e" data-element_type="widget" data-widget_type="artrazprojects.default">
+							<div class="elementor-widget-container">
+								<div class="row gy-30">
+									<div class="col-xxl-auto col-md-6">
+										<div class="project-box">
+											<div class="project-img">
+												<img decoding="async" src="images/project_2_1.jpg" alt="project_2_1">
+											</div>
+											<div class="project-content">
+												<div class="project-number">01</div>
+												<h3 class="h5 project-title"><a href="">CLASSIC HOTEL PROJECT</a></h3>
+												<p class="project-map"><i class="fal fa-location-dot"></i>9 Eshelby Drive, Australia</p>
+											</div>
+										</div>
+									</div>
+									<div class="col-xxl-auto col-md-6">
+										<div class="project-box">
+											<div class="project-img">
+												<img decoding="async" src="images/project_2_2.jpg" alt="project_2_2">
+											</div>
+											<div class="project-content">
+												<div class="project-number">02</div>
+												<h3 class="h5 project-title"><a href="">CLASSIC HOME PROJECT</a></h3>
+												<p class="project-map"><i class="fal fa-location-dot"></i>Melbourne VIC, Australia</p>
+											</div>
+										</div>
+									</div>
+									<div class="col-xxl-auto col-md-6">
+										<div class="project-box">
+											<div class="project-img">
+												<img decoding="async" src="images/project_2_3.jpg" alt="project_2_3">
+											</div>
+											<div class="project-content">
+												<div class="project-number">03</div>
+												<h3 class="h5 project-title"><a href="">INTERIOR DESIGN</a></h3>
+												<p class="project-map"><i class="fal fa-location-dot"></i>24 Boorie Road, Australia</p>
+											</div>
+										</div>
+									</div>
+									<div class="col-xxl-auto col-md-6">
+										<div class="project-box">
+											<div class="project-img">
+												<img decoding="async" src="images/project_2_4.jpg" alt="project_2_4">
+											</div>
+											<div class="project-content">
+												<div class="project-number">04</div>
+												<h3 class="h5 project-title"><a href="">RESTAURANT DECORATE</a></h3>
+												<p class="project-map"><i class="fal fa-location-dot"></i>93 Gilbert Street, Australia</p>
+											</div>
+										</div>
+									</div>
+									<div class="col-xxl-auto col-md-6">
+										<div class="project-box">
+											<div class="project-img">
+												<img decoding="async" src="images/project_2_5.jpg" alt="project_2_5">
+											</div>
+											<div class="project-content">
+												<div class="project-number">05</div>
+												<h3 class="h5 project-title"><a href="">SWEEMING POOL PROJECT</a></h3>
+												<p class="project-map"><i class="fal fa-location-dot"></i>65 Railway Avenue, Australia</p>
+											</div>
+										</div>
+									</div>
+								</div>
+
+							</div>
+						</div>
+					</div>
+				</div>
+
 				<!--<div class="elementor-element elementor-element-ac4214f animated-slow e-flex e-con-boxed e-con e-parent"
 					data-id="ac4214f" data-element_type="container" data-settings="{"
 					animation":"slideinup","content_width":"boxed"}"="" data-core-v316-plus="true">
@@ -1170,15 +1089,12 @@
 						</div>
 					</div>
 				</div>-->
-				<div class="elementor-element elementor-element-13a8503 e-con-full animated-slow e-flex e-con e-parent"
+				<!--<div class="elementor-element elementor-element-13a8503 e-con-full animated-slow e-flex e-con e-parent"
 					data-id="13a8503" data-element_type="container" data-settings="{"
 					content_width":"full","animation":"slideinup"}"="" data-core-v316-plus="true">
 					<div class="elementor-element elementor-element-d31e53b elementor-widget elementor-widget-artrazshapeimage"
 						data-id="d31e53b" data-element_type="widget" data-widget_type="artrazshapeimage.default">
 						<div class="elementor-widget-container">
-							<!-- Image -->
-							<div class="shape-mockup  jump " data-top="0.1%" data-right="0.1%"><img decoding="async"
-									src="images/shape_2.png" alt="Artraz"></div><!-- End Image -->
 						</div>
 					</div>
 					<div class="elementor-element elementor-element-9bdcf4b e-flex e-con-boxed e-con e-child" data-id="9bdcf4b"
@@ -1192,7 +1108,6 @@
 									<div class="elementor-widget-container">
 										<div class="title-area sec-title-area">
 
-											<span class="big-title  e-big-title">C.</span>
 											<h2 class="sec-title">Complete Quary for <br> getting
 												<span class="text-theme">Ideas</span>
 											</h2>
@@ -1280,8 +1195,8 @@
 							</div>
 						</div>
 					</div>
-				</div>
-				<div class="elementor-element elementor-element-dab7af6 animated-slow e-flex e-con-boxed e-con e-parent"
+				</div>-->
+				<!--<div class="elementor-element elementor-element-dab7af6 animated-slow e-flex e-con-boxed e-con e-parent"
 					data-id="dab7af6" data-element_type="container" data-settings="{"
 					animation":"slideinup","content_width":"boxed"}"="" data-core-v316-plus="true">
 					<div class="e-con-inner">
@@ -1321,7 +1236,7 @@
 							</div>
 						</div>
 					</div>
-				</div>
+				</div>-->
 				<!--<div class="elementor-element elementor-element-f0bf0d8 animated-slow e-flex e-con-boxed e-con e-parent"
 					data-id="f0bf0d8" data-element_type="container" data-settings="{"
 					animation":"slideinup","content_width":"boxed"}"="" data-core-v316-plus="true">
@@ -1486,17 +1401,19 @@
 											style="width: 150px;"> </a>
 								</div>
 							</div>
-							<div class="elementor-element elementor-element-d258dfd elementor-widget elementor-widget-text-editor"
+							<!--<div class="elementor-element elementor-element-d258dfd elementor-widget elementor-widget-text-editor"
 								data-id="d258dfd" data-element_type="widget" data-widget_type="text-editor.default">
 								<div class="elementor-widget-container">
 									<p class="footer-info2">Lorem ipsum dolor, 10, Lorem/SP</p>
 								</div>
-							</div>
+							</div>-->
 							<div class="elementor-element elementor-element-abe8c59 elementor-widget elementor-widget-text-editor"
 								data-id="abe8c59" data-element_type="widget" data-widget_type="text-editor.default">
 								<div class="elementor-widget-container">
-									<p class="footer-info2"><a href="mailto:info@example.com">contato@sistenseg.com.br</a><a href="">(11)
-											90000-0000</a></p>
+									<p class="footer-info2">
+										<a href="">(11) 91359-9519</a>
+										<a href="">(11) 94989-2021</a>
+									</p>
 								</div>
 							</div>
 							<div
