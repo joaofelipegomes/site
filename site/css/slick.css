@@ -38,8 +38,8 @@
 
 .slick-slider .slick-track,
 .slick-slider .slick-list {
-    border-top-left-radius: 16px;
-    border-top-right-radius: 16px;
+    /*border-top-left-radius: 16px;
+    border-top-right-radius: 16px;*/
     -webkit-transform: translate3d(0, 0, 0);
     -moz-transform: translate3d(0, 0, 0);
     -ms-transform: translate3d(0, 0, 0);
