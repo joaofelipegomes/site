@@ -16,6 +16,10 @@
 		!function (i, n) { var o, s, e; function c(e) { try { var t = { supportTests: e, timestamp: (new Date).valueOf() }; sessionStorage.setItem(o, JSON.stringify(t)) } catch (e) { } } function p(e, t, n) { e.clearRect(0, 0, e.canvas.width, e.canvas.height), e.fillText(t, 0, 0); var t = new Uint32Array(e.getImageData(0, 0, e.canvas.width, e.canvas.height).data), r = (e.clearRect(0, 0, e.canvas.width, e.canvas.height), e.fillText(n, 0, 0), new Uint32Array(e.getImageData(0, 0, e.canvas.width, e.canvas.height).data)); return t.every(function (e, t) { return e === r[t] }) } function u(e, t, n) { switch (t) { case "flag": return n(e, "\ud83c\udff3\ufe0f\u200d\u26a7\ufe0f", "\ud83c\udff3\ufe0f\u200b\u26a7\ufe0f") ? !1 : !n(e, "\ud83c\uddfa\ud83c\uddf3", "\ud83c\uddfa\u200b\ud83c\uddf3") && !n(e, "\ud83c\udff4\udb40\udc67\udb40\udc62\udb40\udc65\udb40\udc6e\udb40\udc67\udb40\udc7f", "\ud83c\udff4\u200b\udb40\udc67\u200b\udb40\udc62\u200b\udb40\udc65\u200b\udb40\udc6e\u200b\udb40\udc67\u200b\udb40\udc7f"); case "emoji": return !n(e, "\ud83e\udef1\ud83c\udffb\u200d\ud83e\udef2\ud83c\udfff", "\ud83e\udef1\ud83c\udffb\u200b\ud83e\udef2\ud83c\udfff") }return !1 } function f(e, t, n) { var r = "undefined" != typeof WorkerGlobalScope && self instanceof WorkerGlobalScope ? new OffscreenCanvas(300, 150) : i.createElement("canvas"), a = r.getContext("2d", { willReadFrequently: !0 }), o = (a.textBaseline = "top", a.font = "600 32px Arial", {}); return e.forEach(function (e) { o[e] = t(a, e, n) }), o } function t(e) { var t = i.createElement("script"); t.src = e, t.defer = !0, i.head.appendChild(t) } "undefined" != typeof Promise && (o = "wpEmojiSettingsSupports", s = ["flag", "emoji"], n.supports = { everything: !0, everythingExceptFlag: !0 }, e = new Promise(function (e) { i.addEventListener("DOMContentLoaded", e, { once: !0 }) }), new Promise(function (t) { var n = function () { try { var e = JSON.parse(sessionStorage.getItem(o)); if ("object" == typeof e && "number" == typeof e.timestamp && (new Date).valueOf() < e.timestamp + 604800 && "object" == typeof e.supportTests) return e.supportTests } catch (e) { } return null }(); if (!n) { if ("undefined" != typeof Worker && "undefined" != typeof OffscreenCanvas && "undefined" != typeof URL && URL.createObjectURL && "undefined" != typeof Blob) try { var e = "postMessage(" + f.toString() + "(" + [JSON.stringify(s), u.toString(), p.toString()].join(",") + "));", r = new Blob([e], { type: "text/javascript" }), a = new Worker(URL.createObjectURL(r), { name: "wpTestEmojiSupports" }); return void (a.onmessage = function (e) { c(n = e.data), a.terminate(), t(n) }) } catch (e) { } c(n = f(s, u, p)) } t(n) }).then(function (e) { for (var t in e) n.supports[t] = e[t], n.supports.everything = n.supports.everything && n.supports[t], "flag" !== t && (n.supports.everythingExceptFlag = n.supports.everythingExceptFlag && n.supports[t]); n.supports.everythingExceptFlag = n.supports.everythingExceptFlag && !n.supports.flag, n.DOMReady = !1, n.readyCallback = function () { n.DOMReady = !0 } }).then(function () { return e }).then(function () { var e; n.supports.everything || (n.readyCallback(), (e = n.source || {}).concatemoji ? t(e.concatemoji) : e.wpemoji && e.twemoji && (t(e.twemoji), t(e.wpemoji))) })) }((window, document), window._wpemojiSettings);
 	</script>
 	<style id="wp-emoji-styles-inline-css">
+		body {
+			scroll-behavior: smooth;
+		}
+
 		img.wp-smiley,
 		img.emoji {
 			display: inline !important;
@@ -524,22 +528,23 @@
 			<div class="th-mobile-menu">
 				<ul id="menu-main-menu" class="">
 					<li id="menu-item-46"
-						class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item menu-item-home current-menu-ancestor menu-item-has-children menu-item-46">
+						class="mobile-menu menu-item menu-item-type-custom menu-item-object-custom current-menu-item menu-item-home current-menu-ancestor menu-item-has-children menu-item-46">
 						<a href="#">Inicio</a>
 					</li>
-					<li id="menu-item-47" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-47"><a
+					<li id="menu-item-47"
+						class="mobile-menu menu-item menu-item-type-post_type menu-item-object-page menu-item-47"><a
 							href="#sobre">Quem Somos</a></li>
 					<li id="menu-item-65"
-						class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-65"><a
-							href="#servicos">Serviços</a>
+						class="mobile-menu menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-65">
+						<a href="#servicos">Serviços</a>
 					</li>
 
 					<li id="menu-item-66"
-						class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-66"><a
-							href="#projetos">Projetos</a>
+						class="mobile-menu menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-66">
+						<a href="#projetos">Projetos</a>
 					</li>
-					<li id="menu-item-51" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-51"><a
-							href="">Contato</a></li>
+					<li id="mobile-menu menu-item-51"
+						class="menu-item menu-item-type-post_type menu-item-object-page menu-item-51"><a href="">Contato</a></li>
 				</ul>
 			</div>
 
@@ -751,7 +756,8 @@
 								content_width":"full","animation":"slideinup","animation_delay":0}"="">
 								<div
 									class="elementor-element elementor-element-d88b00d elementor-widget elementor-widget-artrazsectiontitle"
-									data-id="d88b00d" data-element_type="widget" data-widget_type="artrazsectiontitle.default">
+									data-id="d88b00d" data-element_type="widget" data-widget_type="artrazsectiontitle.default"
+									style="margin-top: 64px;">
 									<div class="elementor-widget-container">
 										<div class="sec-title-area">
 											<h2 class="sec-title">QUEM <span class="text-theme">SOMOS</span></h2>
@@ -795,21 +801,23 @@
 												display: inline-block
 											}
 										</style>
-										<p class="mb-4">Eraclis Papachristou Architects is one of the most established architectural offices
-											in Cyprus. This is mainly due to its experimental attitude to construction methods along with
-											innovative design in conjunction with the successful completion of various projects, especially in
-											the last ten years.</p>
-										<p>This is mainly due to its experimental attitude to construction methods along with innovative
-											design in conjunction with the successful completion.</p>
+										<p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque condimentum
+											pulvinar ex at
+											dapibus. Nunc consectetur libero eu commodo viverra. Etiam a augue arcu. Ut ut est sit amet nunc
+											fermentum fermentum ut sit amet magna. Sed elit augue, fringilla rutrum tellus in, faucibus
+											accumsan turpis. Duis eget consectetur sapien, a feugiat lectus. Nullam non faucibus neque.
+											Vivamus at vehicula est. In a nunc id sapien auctor efficitur.</p>
+										<p>Praesent maximus ipsum et sem laoreet tempus. Maecenas mattis pharetra mauris, non viverra sem.
+											In sagittis semper quam vel fermentum. Suspendisse malesuada vitae purus vel bibendum.</p>
 									</div>
 								</div>
-								<div class="elementor-element elementor-element-cf39076 elementor-widget elementor-widget-artrazbutton"
+								<!--<div class="elementor-element elementor-element-cf39076 elementor-widget elementor-widget-artrazbutton"
 									data-id="cf39076" data-element_type="widget" data-widget_type="artrazbutton.default">
 									<div class="elementor-widget-container">
 										<div class="btn-wrapper left"><a class="th-btn e-btn" href=""><span class="line left"></span> About
 												Us<span class="line"></span></a></div>
 									</div>
-								</div>
+								</div>-->
 							</div>
 						</div>
 					</div>
@@ -817,7 +825,7 @@
 				<div id="servicos"
 					class="elementor-element elementor-element-73b3b85 animated-slow e-flex e-con-boxed e-con e-parent"
 					data-id="73b3b85" data-element_type="container" data-settings="{"
-					animation":"slideinup","content_width":"boxed"}"="" data-core-v316-plus="true">
+					animation":"slideinup","content_width":"boxed"}"="" data-core-v316-plus="true" style="margin-top: 64px;">
 					<div class="e-con-inner">
 						<div class="elementor-element elementor-element-693e458 e-con-full e-flex e-con e-child" data-id="693e458"
 							data-element_type="container" data-settings="{" content_width":"full"}"="">
@@ -851,10 +859,10 @@
 											<div class="service-card_icon">
 												<img decoding="async" src="images/service_1_1.svg" alt="service_1_1" class="svg-img">
 											</div>
-											<p class="service-card_num">01</p>
-											<h3 class="service-card_title">Architecture</h3>
-											<p class="service-card_text">We see architecture as the composition of all elements that define a
-												particular space and inform the character of a building.</p>
+											<!--<p class="service-card_num">01</p>-->
+											<h3 class="service-card_title">Lorem Ipsum</h3>
+											<p class="service-card_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque
+												condimentum pulvinar ex at dapibus.</p>
 										</div>
 									</div>
 									<div class="col-md-6 col-lg-4">
@@ -862,10 +870,10 @@
 											<div class="service-card_icon">
 												<img decoding="async" src="images/service_1_2.svg" alt="service_1_2" class="svg-img">
 											</div>
-											<p class="service-card_num">02</p>
-											<h3 class="service-card_title">Interior Design</h3>
-											<p class="service-card_text">In Order architecture as the composition of all elements that define
-												a particular space and inform the character of a interior.</p>
+											<!--<p class="service-card_num">02</p>-->
+											<h3 class="service-card_title">Lorem Ipsum</h3>
+											<p class="service-card_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque
+												condimentum pulvinar ex at dapibus.</p>
 										</div>
 									</div>
 									<div class="col-md-6 col-lg-4">
@@ -873,10 +881,10 @@
 											<div class="service-card_icon">
 												<img decoding="async" src="images/service_1_3.svg" alt="service_1_3" class="svg-img">
 											</div>
-											<p class="service-card_num">03</p>
-											<h3 class="service-card_title">Urban Interventions</h3>
-											<p class="service-card_text">The Urban architecture as the composition of all elements that define
-												a particular space and inform the character of into.</p>
+											<!--<p class="service-card_num">03</p>-->
+											<h3 class="service-card_title">Lorem Ipsum</h3>
+											<p class="service-card_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque
+												condimentum pulvinar ex at dapibus.</p>
 										</div>
 									</div>
 									<div class="col-md-6 col-lg-4">
@@ -884,10 +892,10 @@
 											<div class="service-card_icon">
 												<img decoding="async" src="images/service_1_4.svg" alt="service_1_4" class="svg-img">
 											</div>
-											<p class="service-card_num">04</p>
-											<h3 class="service-card_title">Landscape Design</h3>
-											<p class="service-card_text">The Best architecture as composition of all elements that define a
-												particular space and inform the character of a Landscape.</p>
+											<!--<p class="service-card_num">04</p>-->
+											<h3 class="service-card_title">Lorem Ipsum</h3>
+											<p class="service-card_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque
+												condimentum pulvinar ex at dapibus.</p>
 										</div>
 									</div>
 									<div class="col-md-6 col-lg-4">
@@ -895,10 +903,10 @@
 											<div class="service-card_icon">
 												<img decoding="async" src="images/service_1_5.svg" alt="service_1_5" class="svg-img">
 											</div>
-											<p class="service-card_num">05</p>
-											<h3 class="service-card_title">Interdisciple Entity</h3>
-											<p class="service-card_text">You see architecture as the composition of all elements that define a
-												particular space and inform the character of a Gowring.</p>
+											<!--<p class="service-card_num">05</p>-->
+											<h3 class="service-card_title">Lorem Ipsum</h3>
+											<p class="service-card_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque
+												condimentum pulvinar ex at dapibus.</p>
 										</div>
 									</div>
 									<div class="col-md-6 col-lg-4">
@@ -906,10 +914,10 @@
 											<div class="service-card_icon">
 												<img decoding="async" src="images/service_1_6.svg" alt="service_1_6" class="svg-img">
 											</div>
-											<p class="service-card_num">06</p>
-											<h3 class="service-card_title">Artraz Everything</h3>
-											<p class="service-card_text">Artraz is architecture as the composition of all elements that define
-												a particular space and inform the character of Design.</p>
+											<!--<p class="service-card_num">06</p>-->
+											<h3 class="service-card_title">Lorem Ipsum</h3>
+											<p class="service-card_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque
+												condimentum pulvinar ex at dapibus.</p>
 										</div>
 									</div>
 								</div>
@@ -922,7 +930,7 @@
 					class="elementor-element elementor-element-64421dd animated-slow e-flex e-con-boxed e-con e-parent"
 					data-id="64421dd" data-element_type="container" data-settings="{"
 					animation":"slideinup","content_width":"boxed"}"="" data-core-v316-plus="true">
-					<div class="e-con-inner">
+					<div class="e-con-inner" style="padding-top: 0;">
 						<div class="elementor-element elementor-element-0bb8350 e-con-full e-flex e-con e-child" data-id="0bb8350"
 							data-element_type="container" data-settings="{" content_width":"full"}"="">
 							<div
@@ -932,10 +940,7 @@
 								<div class="elementor-widget-container" style="width: 100%;">
 									<div class="title-area sec-title-area" style="width: 100%; display: flex; justify-content: center;">
 
-										<h2 class="sec-title">
-											<span class="text-transparent">NOSSOS</span>
-											<span>PROJETOS</span>
-										</h2>
+										<h2 class="sec-title">Nossos <span class="text-theme">Projetos</span></h2>
 									</div>
 
 								</div>
@@ -959,8 +964,8 @@
 											</div>
 											<div class="project-content">
 												<div class="project-number">01</div>
-												<h3 class="h5 project-title"><a href="">CLASSIC HOTEL PROJECT</a></h3>
-												<p class="project-map"><i class="fal fa-location-dot"></i>9 Eshelby Drive, Australia</p>
+												<h3 class="h5 project-title"><a href="">LOREM IPSUM DOLOR</a></h3>
+												<!--<p class="project-map"><i class="fal fa-location-dot"></i>9 Eshelby Drive, Australia</p>-->
 											</div>
 										</div>
 									</div>
@@ -971,8 +976,8 @@
 											</div>
 											<div class="project-content">
 												<div class="project-number">02</div>
-												<h3 class="h5 project-title"><a href="">CLASSIC HOME PROJECT</a></h3>
-												<p class="project-map"><i class="fal fa-location-dot"></i>Melbourne VIC, Australia</p>
+												<h3 class="h5 project-title"><a href="">LOREM IPSUM DOLOR</a></h3>
+												<!--<p class="project-map"><i class="fal fa-location-dot"></i>Melbourne VIC, Australia</p>-->
 											</div>
 										</div>
 									</div>
@@ -983,8 +988,8 @@
 											</div>
 											<div class="project-content">
 												<div class="project-number">03</div>
-												<h3 class="h5 project-title"><a href="">INTERIOR DESIGN</a></h3>
-												<p class="project-map"><i class="fal fa-location-dot"></i>24 Boorie Road, Australia</p>
+												<h3 class="h5 project-title"><a href="">LOREM IPSUM DOLOR</a></h3>
+												<!--<p class="project-map"><i class="fal fa-location-dot"></i>24 Boorie Road, Australia</p>-->
 											</div>
 										</div>
 									</div>
@@ -995,8 +1000,8 @@
 											</div>
 											<div class="project-content">
 												<div class="project-number">04</div>
-												<h3 class="h5 project-title"><a href="">RESTAURANT DECORATE</a></h3>
-												<p class="project-map"><i class="fal fa-location-dot"></i>93 Gilbert Street, Australia</p>
+												<h3 class="h5 project-title"><a href="">LOREM IPSUM DOLOR</a></h3>
+												<!--<p class="project-map"><i class="fal fa-location-dot"></i>93 Gilbert Street, Australia</p>-->
 											</div>
 										</div>
 									</div>
@@ -1007,8 +1012,8 @@
 											</div>
 											<div class="project-content">
 												<div class="project-number">05</div>
-												<h3 class="h5 project-title"><a href="">SWEEMING POOL PROJECT</a></h3>
-												<p class="project-map"><i class="fal fa-location-dot"></i>65 Railway Avenue, Australia</p>
+												<h3 class="h5 project-title"><a href="">LOREM IPSUM DOLOR</a></h3>
+												<!--<p class="project-map"><i class="fal fa-location-dot"></i>65 Railway Avenue, Australia</p>-->
 											</div>
 										</div>
 									</div>
@@ -1505,7 +1510,13 @@
 	<script src="js/frontend.min.js" id="elementor-frontend-js"></script>
 	<script src="js/artraz-core.js" id="artraz-core-js"></script>
 	<script src="js/artraz-frontend.js" id="artraz-frontend-script-js"></script>
-
+	<script>
+		document.querySelectorAll('.mobile-menu').forEach(element => {
+			element.addEventListener('click', () => {
+				document.querySelector('.th-menu-toggle').click()
+			})
+		})
+	</script>
 </body>
 
 </html>
